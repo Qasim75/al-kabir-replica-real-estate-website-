@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Al Kabir Developers | Trusted Real Estate Developer in Lahore</title>
+    <meta name="description" content="Al Kabir Developers is a leading real estate developer in Lahore, delivering LDA-approved residential and commercial projects including Al Kabir Town, Downtown, Jumairah Park, Kings Town, Oasis, and more." />
+    <meta name="keywords" content="Al Kabir Developers, Al Kabir Town, Lahore real estate, LDA approved housing, plots for sale Lahore, Al Kabir Downtown, Kings Town, Jumairah Park" />
+    <meta name="author" content="Al Kabir Developers" />
+    <meta name="theme-color" content="#0f172a" />
+
+    <!-- Applies saved/OS dark-mode preference before React mounts, so there's
+         no flash of the wrong theme on first paint. -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('ak_theme');
+          var theme = stored === 'dark' || stored === 'light'
+            ? stored
+            : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          if (theme === 'dark') document.documentElement.classList.add('dark');
+          document.documentElement.style.colorScheme = theme;
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Al Kabir Developers | Trusted Real Estate Developer in Lahore" />
+    <meta property="og:description" content="Explore LDA-approved residential and commercial projects by Al Kabir Developers across Lahore." />
+    <meta property="og:image" content="/assets/images/logo_main_header.webp" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Al Kabir Developers" />
+    <meta name="twitter:description" content="LDA-approved residential and commercial real estate projects in Lahore." />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
