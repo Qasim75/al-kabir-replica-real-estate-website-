@@ -27,7 +27,7 @@ const History = () => {
   ];
 
   return (
-    <div className="bg-[#fcfcfc] min-h-screen font-sans">
+    <div className="bg-[#fcfcfc] dark:bg-slate-950 min-h-screen font-sans">
       {/* Hero Section */}
       <section className="bg-slate-900 py-24 text-center text-white relative">
         <h1 className="text-5xl md:text-7xl font-black tracking-tighter uppercase relative z-10">Our Journey</h1>
@@ -62,7 +62,7 @@ const History = () => {
 
                 {/* Content Card */}
                 <div className="w-[calc(100%-4rem)] md:w-[42%] ml-auto md:ml-0">
-                  <div className={`p-8 rounded-[2.5rem] bg-white shadow-md hover:shadow-2xl transition-all duration-500 border-t-8 ${item.color === 'blue' ? 'border-blue-600' : 'border-green-500'}`}>
+                  <div className={`p-8 rounded-[2.5rem] bg-white dark:bg-slate-800 shadow-md hover:shadow-2xl transition-all duration-500 border-t-8 ${item.color === 'blue' ? 'border-blue-600' : 'border-green-500'}`}>
                     <h4 className="text-2xl font-bold text-slate-800 dark:text-white mb-2">{item.title}</h4>
                     <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">{item.desc}</p>
                   </div>

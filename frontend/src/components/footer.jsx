@@ -19,10 +19,6 @@ const Footer = () => {
           <StaggerItem className="space-y-4">
             <div className="flex items-center gap-3 mb-6">
               <img alt="Al Kabir Developers Logo" src="/assets/images/logo_main_header.webp" className="h-12 w-auto" />
-              <div>
-                <h3 className="text-lg font-bold text-white">AL KABIR</h3>
-                <p className="text-xs text-emerald-400 font-semibold">Developers</p>
-              </div>
             </div>
             <p className="text-slate-300 text-sm leading-relaxed">
               Developing quality infrastructure and real estate projects since 2016. We specialize in creating sustainable communities with modern amenities.

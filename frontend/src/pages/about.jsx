@@ -14,7 +14,7 @@ const About = () => {
   ];
 
   return (
-    <div className="bg-[#fcfcfc] min-h-screen font-sans">
+    <div className="bg-[#fcfcfc] dark:bg-slate-950 min-h-screen font-sans">
       {/* 1. Cinematic Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center bg-slate-900 overflow-hidden">
         {/* Background Overlay */}
@@ -66,7 +66,7 @@ const About = () => {
               <StaggerItem
                 key={index}
                 whileHover={{ y: -10, scale: 1.02 }}
-                className="relative group p-8 rounded-[2.5rem] bg-white shadow-[0_20px_50px_rgba(0,0,0,0.04)] border border-slate-100 overflow-hidden"
+                className="relative group p-8 rounded-[2.5rem] bg-white dark:bg-slate-800 shadow-[0_20px_50px_rgba(0,0,0,0.04)] border border-slate-100 dark:border-slate-700 overflow-hidden"
               >
                 {/* Subtle Gradient Glow on Hover */}
                 <div className={`absolute top-0 right-0 w-24 h-24 bg-gradient-to-br ${card.color} opacity-0 group-hover:opacity-10 transition-opacity blur-2xl`} />

@@ -185,7 +185,7 @@ const Alkabir = () => {
               <div className="text-5xl font-bold text-emerald-600 mb-3">
                 <AnimatedCounter value={50} suffix="+" />
               </div>
-              <div className="text-lg text-slate-700 font-semibold">Completed Projects</div>
+              <div className="text-lg text-slate-700 dark:text-slate-200 font-semibold">Completed Projects</div>
             </StaggerItem>
             <StaggerItem
               whileHover={{ y: -6, boxShadow: '0 20px 30px -12px rgba(37,99,235,0.25)' }}
@@ -194,7 +194,7 @@ const Alkabir = () => {
               <div className="text-5xl font-bold text-blue-600 mb-3">
                 <AnimatedCounter value={25} suffix="+" />
               </div>
-              <div className="text-lg text-slate-700 font-semibold">Ongoing Projects</div>
+              <div className="text-lg text-slate-700 dark:text-slate-200 font-semibold">Ongoing Projects</div>
             </StaggerItem>
           </StaggerContainer>
 
@@ -202,7 +202,7 @@ const Alkabir = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-gradient-to-br from-emerald-50 to-blue-50 dark:from-slate-800 dark:to-slate-800 p-12 rounded-xl">
             <Reveal direction="left" className="order-2 lg:order-1">
               <h3 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Our Mission</h3>
-              <p className="text-slate-700 leading-relaxed mb-6">
+              <p className="text-slate-700 dark:text-slate-300 leading-relaxed mb-6">
                 To refine and redefine the concept of community lifestyle, offering
                 affordable plots with quality features. Our mission is to blend quality
                 with economy, providing clients with the best value for their money as
@@ -210,7 +210,7 @@ const Alkabir = () => {
                 specialize in 3 and 5 Marla plots.
               </p>
               <h3 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Our Vision</h3>
-              <p className="text-slate-700 leading-relaxed mb-8">
+              <p className="text-slate-700 dark:text-slate-300 leading-relaxed mb-8">
                 To be one of the world's most valuable, most innovative and most admired
                 company for having constantly worked towards fulfilling people's dreams
                 and shaping new lifestyles.
@@ -243,7 +243,7 @@ const Alkabir = () => {
               <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-2">
                 Where Happiness Lives
               </h2>
-              <p className="text-slate-600">Explore our premium real estate projects</p>
+              <p className="text-slate-600 dark:text-slate-400">Explore our premium real estate projects</p>
             </div>
             <motion.a
               whileHover={{ scale: 1.05 }}
@@ -285,7 +285,7 @@ const Alkabir = () => {
                   </div>
 
                   {/* Info */}
-                  <div className="p-6 bg-white group-hover:bg-slate-50 transition duration-300">
+                  <div className="p-6 bg-white dark:bg-slate-800 group-hover:bg-slate-50 dark:group-hover:bg-slate-700 transition duration-300">
                     <h4 className="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-emerald-600 transition duration-300">
                       {project.name}
                     </h4>

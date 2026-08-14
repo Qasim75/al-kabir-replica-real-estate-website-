@@ -24,9 +24,9 @@ const Amenities = () => {
   ];
 
   return (
-    <div className="bg-[#fdfdfd] min-h-screen font-sans selection:bg-green-100 selection:text-green-900">
+    <div className="bg-[#fdfdfd] dark:bg-slate-950 min-h-screen font-sans selection:bg-green-100 selection:text-green-900">
       {/* Modern Hero Section with Soft Blur */}
-      <section className="relative py-24 px-6 overflow-hidden bg-white">
+      <section className="relative py-24 px-6 overflow-hidden bg-white dark:bg-slate-950">
         <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-96 h-96 bg-blue-50 rounded-full blur-3xl opacity-60 animate-pulse" />
         <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/4 w-96 h-96 bg-green-50 rounded-full blur-3xl opacity-60" />
 
@@ -66,7 +66,7 @@ const Amenities = () => {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
                 whileHover={{ y: -10 }}
-                className="group relative bg-white p-8 rounded-[2rem] border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] transition-all duration-500 overflow-hidden"
+                className="group relative bg-white dark:bg-slate-800 p-8 rounded-[2rem] border border-slate-100 dark:border-slate-700 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.08)] transition-all duration-500 overflow-hidden"
               >
                 {/* Background Subtle Gradient on Hover */}
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-green-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

@@ -29,8 +29,8 @@ const Navbar = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
     >
-      {/* TOP BAR: Social Icons and Quick Links */}
-      <div className="bg-gradient-to-r from-slate-900 to-slate-800 text-white text-sm border-b border-slate-700">
+      {/* TOP BAR: Social Icons and Quick Links (hidden on mobile to avoid overflow; links move into the mobile menu) */}
+      <div className="hidden md:block bg-gradient-to-r from-slate-900 to-slate-800 text-white text-sm border-b border-slate-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-2">
             <div className="flex items-center gap-6">
@@ -70,18 +70,14 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo Area */}
-            <Link to="/" className="flex items-center gap-3 group">
+            <Link to="/" className="flex items-center gap-3 group shrink-0">
               <motion.img
                 whileHover={{ rotate: -6, scale: 1.06 }}
                 transition={{ type: 'spring', stiffness: 300, damping: 15 }}
-                
+                alt="Al Kabir Developers"
                 src="/assets/images/logo_main_header.webp"
-                className="h-12 w-auto"
+                className="h-10 sm:h-12 w-auto"
               />
-              <div className="flex flex-col">
-                <span className="text-xl font-bold text-white tracking-wider group-hover:text-emerald-400 transition duration-300">AL KABIR</span>
-                <span className="text-xs text-emerald-400 font-semibold tracking-widest">Developers</span>
-              </div>
             </Link>
 
             {/* Desktop Navigation Menu */}
@@ -202,8 +198,14 @@ const Navbar = () => {
                   <li className="border-b border-slate-700">
                     <Link to="/adjustment-forms" className="block px-6 py-3 text-white hover:bg-emerald-500 hover:text-white transition duration-300 font-medium" onClick={() => setIsOpen(false)}>Payments</Link>
                   </li>
-                  <li>
+                  <li className="border-b border-slate-700">
                     <Link to="/contact" className="block px-6 py-3 text-white hover:bg-emerald-500 hover:text-white transition duration-300 font-medium" onClick={() => setIsOpen(false)}>Contact</Link>
+                  </li>
+                  <li className="border-b border-slate-700">
+                    <Link to="/register" className="block px-6 py-3 text-white hover:bg-emerald-500 hover:text-white transition duration-300 font-medium" onClick={() => setIsOpen(false)}>Register For News</Link>
+                  </li>
+                  <li>
+                    <Link to="/callback" className="block px-6 py-3 text-white hover:bg-emerald-500 hover:text-white transition duration-300 font-medium" onClick={() => setIsOpen(false)}>Callback Request</Link>
                   </li>
                 </ul>
               </motion.div>
